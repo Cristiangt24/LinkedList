@@ -1,8 +1,8 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using Shared;
 
 namespace SimpleList;
 
-public class SinglyLinkedList<T>
+public class SinglyLinkedList<T> : ILinkedList<T>
 {
     private Node<T>? _head;
 

@@ -1,6 +1,8 @@
-﻿using SimpleList;
+﻿using DoubleList;
+using SimpleList;
 
-var list = new SinglyLinkedList<string>();
+var list = new DoubleLinkedList<string>();
+//var list = new SimpleLinkedList<string>();
 var option = string.Empty;
 var value = string.Empty;
 do

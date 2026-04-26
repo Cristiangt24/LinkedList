@@ -1,4 +1,6 @@
 <Solution>
-  <Project Path="LinkedLists.Console/LinkedLists.Console.csproj" Id="1317d29d-edbf-4d4e-b081-a4ea5f9f17d6" />
-  <Project Path="SimpleList/SimpleList.csproj" Id="b51ca2c5-20c7-46bd-98a1-436a637b9b7b" />
+  <Project Path="../../../../../../../../Proyectos/LinkedList/DoubleList/DoubleList.csproj" Id="9e2378d0-ec4d-42a2-90c2-1d469801867c" />
+  <Project Path="../../../../../../../../Proyectos/LinkedList/LinkedLists.Console/LinkedLists.Console.csproj" Id="1317d29d-edbf-4d4e-b081-a4ea5f9f17d6" />
+  <Project Path="../../../../../../../../Proyectos/LinkedList/Shared/Shared.csproj" Id="e012e2c5-b596-4393-8157-721225e3c1ad" />
+  <Project Path="../../../../../../../../Proyectos/LinkedList/SimpleList/SimpleList.csproj" Id="b51ca2c5-20c7-46bd-98a1-436a637b9b7b" />
 </Solution>
