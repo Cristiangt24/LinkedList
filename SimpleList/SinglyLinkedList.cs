@@ -94,4 +94,52 @@ public class SinglyLinkedList<T>
         }
         _head = previous;
     }
+    public void OrderList()
+    {
+        if (_head == null || _head.Next == null)
+            return;
+
+        bool swapped;
+        do
+        {
+            swapped = false;
+            var current = _head;
+
+            while (current.Next != null)
+            {
+                int comparison = Comparer<T>.Default.Compare(current.Data, current.Next.Data);
+
+                if (comparison > 0)
+                {
+                    T temp = current.Data!;
+                    current.Data = current.Next.Data;
+                    current.Next.Data = temp;
+                    swapped = true;
+                }
+
+                current = current.Next;
+            }
+        } while (swapped);
+    }
+    public void InsertOrdered(T data)
+    {
+        var newNode = new Node<T>(data);
+
+        if (_head == null || Comparer<T>.Default.Compare(data, _head.Data) <= 0)
+        {
+            newNode.Next = _head;
+            _head = newNode;
+            return;
+        }
+
+        var current = _head;
+        while (current.Next != null &&
+               Comparer<T>.Default.Compare(data, current.Next.Data) > 0)
+        {
+            current = current.Next;
+        }
+
+        newNode.Next = current.Next;
+        current.Next = newNode;
+    }
 }

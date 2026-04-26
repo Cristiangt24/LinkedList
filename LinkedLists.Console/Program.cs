@@ -44,6 +44,17 @@ do
             list.Reverse();
             break;
 
+        case "6":
+            list.OrderList();
+            Console.WriteLine("List ordered successfully.");
+            break;
+
+        case "7":
+            Console.Write("Enter a value: ");
+            value = Console.ReadLine() ?? string.Empty;
+            list.InsertOrdered(value);
+            break;
+
         case "8":
             Console.WriteLine(list);
             break;
